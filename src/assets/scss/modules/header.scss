@@ -1,1 +1,13 @@
 // header style
+.section-img {
+    position: absolute;
+    z-index: -1;
+}
+
+header {
+    background-color: red;
+}
+
+.logo {
+    content: url('/assets/img/logo.png');
+}
