@@ -1,4 +1,14 @@
-mixin item(title, descr)
-  .item
-    h2.item-title= title
-    p.item-descr= descr
+mixin inside(title)
+  .inside
+    img.inside__img.inside-img
+    h2.inside__title.inside-title= title
+
+mixin switch
+  .switch
+    img.switch__left
+    img.switch__right
+
+mixin slide__desc(title, descr)
+  .slide__desc
+    .slide__header= title
+    .slide__text= descr
