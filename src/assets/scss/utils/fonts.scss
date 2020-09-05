@@ -1,2 +1,26 @@
 // Fonts here
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
+
+@font-face {
+    font-family: 'Titillium Web';
+    font-weight: 600;
+    src: url(/assets/fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    src: url(/assets/fonts/Open_Sans/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    src: url(/assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-weight: normal;
+    src: url(/assets/fonts/Oswald/static/Oswald-Regular.ttf);
+}

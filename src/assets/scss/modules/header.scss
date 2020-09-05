@@ -1,13 +1,132 @@
 // header style
-.section-img {
-    position: absolute;
-    z-index: -1;
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;    
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFF;
 }
 
-header {
-    background-color: red;
+    .header__background-img {
+        position: absolute;
+        z-index: -1;
+    }
+
+
+    .header__top-menu {
+        // позиция блока top-menu относительно блока header
+        // position of the block top-menu relative to the block header
+    }
+
+    .header__upright-wide-line {
+        position: absolute;
+        z-index: 1;
+        top: 80px;
+        left: 405px;
+        width: 444px;
+        height: 720px;
+        background-color: rgba(0, 91, 193, 0.6);
+    }
+
+    .header__description {
+        z-index: 2;
+        margin: 0 595px;
+    }
+
+.top-menu {
+    display: grid;
+    grid-template-columns: 40px 140px 555px 454px 731px;
+    grid-template-rows: 11px 58px 11px;
+    background-color: rgba(0, 91, 193, 0.6);
 }
+
+    .top-menu__logo {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .top-menu__nav {
+        grid-column: 4;
+        grid-row: 2;
+    }
 
 .logo {
+    display: grid;
+    grid-template-columns: 57.74px 75px;
+    grid-column-gap: 7.26px;
+    //grid-template-rows: 11px 58px 11px;
+}
+
+    .logo__img {
+        grid-column: 1;
+        //grid-row-start: 2;
+    }
+
+    .logo__title {
+        grid-column: 2;
+        //grid-row-start: 2;
+    }
+
+.logo-img {
+    padding: 4px 0 4px 0;
     content: url('/assets/img/logo.png');
+}
+
+.logo-title {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .nav-item {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFF;
+    }
+
+
+.description {
+    display: grid;
+    grid-template-rows: 162px 142px 44px 51px 161px;
+    grid-row-gap: 40px;
+}
+    .description__header { grid-row: 2; }
+    .description__title { grid-row: 3; }
+    .description__form { grid-row: 4; }
+
+.desc-header {
+    width: 635px;
+    //height: 142px;
+    font-family: 'Oswald';
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: 0.01em;
+}
+
+.desc-title {
+    width: 445px;
+    //height: 44px;
+}
+
+.form-button {
+    width: 160px;
+    height: 51px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: rgba(255,255,255,0);
+    color: #FFF;
+    border: 2px solid #FFF;
 }

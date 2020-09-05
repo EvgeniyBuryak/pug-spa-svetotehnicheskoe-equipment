@@ -1,5 +1,22 @@
 header
-  img.section-img(src="./assets/img/header.png")
-  .container
-    span header
-    .logo
+  img.header__background-img(src="./assets/img/header.png")
+  .header__upright-wide-line
+  .header__top-menu.top-menu
+    .top-menu__logo.logo
+      img.logo__img.logo-img
+      span.logo__title.logo-title TRANS LIGHT
+    nav.top-menu__nav.nav
+      a.nav-item(href="#") О компании
+      a.nav-item(href="#") Портфолио
+      a.nav-item(href="#") Каталог
+      a.nav-item(href="#") Сервис
+      a.nav-item(href="#") Контакты
+  .container.header__description.description  
+    h1.description__header.desc-header Светотехническое оборудование
+      br
+      span= ' в Петербурге'
+    p.description__title.desc-title Продажа, аренда светотехнического оборудования. Оформление официальных мероприятий под ключ.
+    form.description__form(action='#', method='POST')
+      input.form-button(type='submit', value='перейти')
+    
+    
