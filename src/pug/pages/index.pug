@@ -7,7 +7,7 @@ block variables
 
 block content
   section.section_pad-top_150
-    .container.container_indent_405
+    .container.container_slider
       .slider
         +inside('наши проекты')
         +switch
@@ -23,22 +23,28 @@ block content
     .container.container-catalog
       +inside('каталог продукции')
       .catalog-switch
-        a.catalog-switch__text(href="#") robe
-        a.catalog-switch__text(href="#") compulite
+        a.catalog-switch__link(href="http://localhost/robe") robe
+        a.catalog-switch__link(href="http://localhost:8081/#") compulite
       .catalog
         .catalog__item
           .catalog__img
           .catalog__descr Статичные светодиодные приборы
         .catalog__item
-          .catalog__img
+          .catalog__img.catalog__img_2
           .catalog__descr Контроллеры
         .catalog__item
-          .catalog__img
+          .catalog__img.catalog__img_3
           .catalog__descr Аксессуары
 
   section.section_pad-top_150
-    .container
+    .container.container_renta
       +inside('аренда оборудования')
+      .renta
+        p.renta__descr Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM, StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite и др.
+        .renta__new-equipment
+          .renta__new-equipment Новое оборудование, предоставляемое в аренду:
+          +switch
+  section.section_pad-top_150
     .container
       +inside('новости')
       //- +item('item title', 'item descr')

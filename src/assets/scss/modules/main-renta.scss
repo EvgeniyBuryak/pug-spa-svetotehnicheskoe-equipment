@@ -1,0 +1,26 @@
+.container_renta {
+    margin: 0 405px;
+    max-width: 1110px;
+}
+
+.renta {
+    height: 394px;
+    display: grid;
+    grid-template-columns: 350px 665px;
+    grid-column-gap: 95px;
+    grid-template-rows: 70px 175px 149px;
+}
+
+.renta__descr {
+    grid-column: 1;
+    grid-row: 2;
+    //display: flex;
+    //align-items: center;
+}
+
+.new-equipment {
+    grid-column: 2;
+    grid-row: 1/4;
+    width: 665px;
+    border: 3px solid #005BC1;
+}

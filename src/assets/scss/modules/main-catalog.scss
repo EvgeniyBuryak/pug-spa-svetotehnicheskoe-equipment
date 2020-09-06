@@ -31,14 +31,14 @@
 }
 
 .catalog-switch__link:hover {
-    color: red;
-    border-bottom-color: red;
-}
-
-.catalog-switch__link:visited {
     color: #005bc1;
     border-bottom: 2px solid #005bc1;
     padding-bottom: 3px;
+}
+
+.catalog-switch__link:visited {
+    color: grey;
+    border-bottom-color: grey;
 }
 
 .catalog {
@@ -57,6 +57,14 @@
     content: url('/assets/img/catalog-img-1.png');
     position: absolute;
     z-index: 1;
+}
+
+.catalog__img_2 {
+    content: url('/assets/img/catalog-img-2.png');
+}
+
+.catalog__img_3 {
+    content: url('/assets/img/catalog-img-3.png');
 }
 
 .catalog__descr {
