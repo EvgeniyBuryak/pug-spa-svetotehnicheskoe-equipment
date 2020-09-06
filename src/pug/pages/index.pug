@@ -6,8 +6,8 @@ block variables
   - var pageClass = 'index-page';
 
 block content
-  section.section__slider
-    .container.container__slider
+  section.section_pad-top_150
+    .container.container_indent_405
       .slider
         +inside('наши проекты')
         +switch
@@ -19,9 +19,24 @@ block content
           .slide__img.slide__img_right
           +slide__desc('ССК “ОЛИМП”', 'Световое оформление форума “Шубы-2019”')
 
-  section
-    .container
+  section.section_pad-top_150
+    .container.container-catalog
       +inside('каталог продукции')
+      .catalog-switch
+        a.catalog-switch__text(href="#") robe
+        a.catalog-switch__text(href="#") compulite
+      .catalog
+        .catalog__item
+          .catalog__img
+          .catalog__descr Статичные светодиодные приборы
+        .catalog__item
+          .catalog__img
+          .catalog__descr Контроллеры
+        .catalog__item
+          .catalog__img
+          .catalog__descr Аксессуары
+
+  section.section_pad-top_150
     .container
       +inside('аренда оборудования')
     .container

@@ -1,8 +1,8 @@
-.section__slider {
+.section_pad-top_150 {
     padding: 150px 0 0 0;
 }
 
-.container__slider {
+.container_indent_405 {
     margin: 0 405px;
     max-width: 1110px;
 }
@@ -86,10 +86,14 @@
 }
 
 .inside-title {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 30px;
     line-height: 44px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    color: #343434;
 }
 
 .switch {
