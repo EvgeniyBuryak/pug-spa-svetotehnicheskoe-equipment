@@ -18,9 +18,35 @@
     //align-items: center;
 }
 
-.new-equipment {
+.renta__equipment {
     grid-column: 2;
     grid-row: 1/4;
+}
+
+.renta-equipment {
     width: 665px;
     border: 3px solid #005BC1;
+    padding: 30px 0 30px 30px;
+    display: grid;
+    grid-template-columns: 112.5px 112.5px 112.5px 112.5px;
+    grid-column-gap: 30px;
+    grid-template-rows: 55px 29px 250px;
+}
+
+.renta-equipment__descr {
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.renta-equipment__img {
+    width: 255px;
+    height: 250px;
+    content: url(/assets/img/accessories.png);
+    grid-column: 1/2;
+    grid-row: 3;
+}
+
+.renta-equipment__facts {
+    grid-column: 3/5;
+    grid-row: 3;
 }
