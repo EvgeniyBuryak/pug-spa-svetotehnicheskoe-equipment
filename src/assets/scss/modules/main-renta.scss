@@ -11,42 +11,86 @@
     grid-template-rows: 70px 175px 149px;
 }
 
-.renta__descr {
-    grid-column: 1;
-    grid-row: 2;
-    //display: flex;
-    //align-items: center;
+    .renta__descr {
+        grid-column: 1;
+        grid-row: 2;
+        //display: flex;
+        //align-items: center;
+    }
+
+    .renta__equipment {
+        grid-column: 2;
+        grid-row: 1/4;
+        margin-top: -35px;
+        margin-bottom: 35px;
+    }
+
+.renta-descr {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #343434;
 }
 
-.renta__equipment {
-    grid-column: 2;
-    grid-row: 1/4;
-}
+    ul.renta-descr_font-size_14px {
+        font-size: 14px;
+        line-height: 19px;
+        list-style-type: circle;
+    }
 
 .renta-equipment {
     width: 665px;
     border: 3px solid #005BC1;
     padding: 30px 0 30px 30px;
     display: grid;
-    grid-template-columns: 112.5px 112.5px 112.5px 112.5px;
+    grid-template-columns: 112.5px 112.5px 112.5px 1fr;
     grid-column-gap: 30px;
     grid-template-rows: 55px 29px 250px;
 }
 
-.renta-equipment__descr {
-    grid-column: 1/4;
-    grid-row: 1;
+    .renta-equipment__descr {
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
+    .renta-equipment__img {
+        width: 255px;
+        height: 250px;
+        content: url(/assets/img/accessories.png);
+        grid-column: 1/2;
+        grid-row: 3;
+    }
+
+    .renta-equipment__facts {
+        grid-column: 3/5;
+        grid-row: 3;
+    }
+
+    .renta-equipment__list {
+        width: 310px;
+        height: 152px;
+        margin: 0;
+        padding-left: 15px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+.renta-equipment-descr {
+    font-family: 'Owsald', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #343434;
 }
 
-.renta-equipment__img {
-    width: 255px;
-    height: 250px;
-    content: url(/assets/img/accessories.png);
-    grid-column: 1/2;
-    grid-row: 3;
-}
-
-.renta-equipment__facts {
-    grid-column: 3/5;
-    grid-row: 3;
-}
+    .renta-equipment-descr_font-size_16px {
+        font-size: 16px;
+        line-height: 24px;
+    }

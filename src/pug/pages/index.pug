@@ -40,18 +40,19 @@ block content
     .container.container_renta
       +inside('аренда оборудования')
       .renta
-        p.renta__descr Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM, StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite и др.
+        p.renta__descr.renta-descr Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM, StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite и др.
         .renta__equipment.renta-equipment
-          .renta-equipment__descr Новое оборудование, предоставляемое в аренду:
+          h3.renta-equipment__descr.renta-equipment-descr Новое оборудование, предоставляемое в аренду:
           +switch
           .renta-equipment__img
           .renta-equipment__facts
-            div Robe Robin ParFect 100
-              ul
-                li Источник света 12 светодиодов RGBW по 15 Вт каждый
-                li Угол раскрытия 7°
-                li В комплекте рассеивающая линза 40°
-                li Потребляемая мощность 200 Вт
+            h4.renta-equipment-descr.renta-equipment-descr_font-size_16px Robe Robin ParFect 100
+            ul.renta-equipment__list.renta-descr.renta-descr_font-size_14px
+              li Источник света 12 светодиодов RGBW по 15 Вт каждый
+              li Угол раскрытия 7°
+              li В комплекте рассеивающая линза 40°
+              li Потребляемая мощность 200 Вт
+
   section.section_pad-top_150
     .container
       +inside('новости')
