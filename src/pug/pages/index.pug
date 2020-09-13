@@ -53,12 +53,27 @@ block content
               li В комплекте рассеивающая линза 40°
               li Потребляемая мощность 200 Вт
 
-  section.section_pad-top_150
-    .container
-      +inside('новости')
-      //- +item('item title', 'item descr')
-      //- +item('item title', 'item descr')
-      //- +item('item title', 'item descr')
+  section.section__news
+    .container.news
+      .news__header.news-header
+        +inside('новости')
+        form
+          input.news-header__button.news-header-button(type='submit', value='все новости')
+      .news__content
+        .news__item.news-item
+          .news-item__column-1.news-item-img
+
+          .news-item__column-2.news-item-column-2
+            .news-item-column-2__header.news-item-header= 'Семинар Milos'
+              span.news-item-column-2__date.news-item-descr.news-item-date 27.01.2019
+            .news-item-column-2__descr.news-item-descr= 'Наши сотрудники прошли последний семинар от компании Milos. Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием не только мероприятий, но производственных помещений.'
+            .news-item-column-2__link= 'Читать полностью...'
+
+          .news-item__column-3
+          .news-item__column-4
+
+
+      //- +item('item title', 'item descr')      
   //- example-component
 
 block script
